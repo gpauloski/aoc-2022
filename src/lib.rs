@@ -20,3 +20,8 @@ pub fn read_cli_args() -> Args {
 pub fn read_input_file(path: &str) -> String {
     fs::read_to_string(path).expect(&format!("Unable to read {}", path))
 }
+
+pub fn str_to_lines(s: &str) -> Vec<String> {
+    let s_ = s.trim();
+    s_.split("\n").map(str::trim).map(String::from).collect()
+}
