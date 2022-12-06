@@ -1,10 +1,10 @@
 use aoc;
 
-fn part1(input: &str) -> String {
+fn part1(_input: &str) -> String {
     String::from("null")
 }
 
-fn part2(input: &str) -> String {
+fn part2(_input: &str) -> String {
     String::from("null")
 }
 
