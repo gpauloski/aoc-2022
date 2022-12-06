@@ -184,7 +184,6 @@ mod tests {
     #[test]
     fn test() {
         let input = String::from("A Y\nB X\nC Z");
-        let expected = 15;
 
         assert_eq!(compute_part1(&input), 15);
         assert_eq!(compute_part2(&input), 12);

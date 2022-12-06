@@ -10,13 +10,12 @@ fn has_unique_elements(input: &str) -> bool {
 
 fn find_marker(input: &str, count: usize) -> usize {
     for i in 0..(input.len() - count) {
-        if has_unique_elements(&input[i..(i+count)]) {
+        if has_unique_elements(&input[i..(i + count)]) {
             return i + count;
         }
     }
     0
 }
-
 
 fn part1(input: &str) -> usize {
     find_marker(input, 4)
