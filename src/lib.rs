@@ -22,6 +22,9 @@ pub fn read_input_file(path: &str) -> String {
 }
 
 pub fn str_to_lines(s: &str) -> Vec<String> {
-    let s_ = s.trim();
-    s_.split("\n").map(str::trim).map(String::from).collect()
+    let s_ = s.trim_end();
+    s_.split("\n")
+        .map(str::trim_end)
+        .map(String::from)
+        .collect()
 }
