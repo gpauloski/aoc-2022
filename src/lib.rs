@@ -1,6 +1,8 @@
 use std::env;
 use std::fs;
 
+pub mod tree;
+
 pub struct Args {
     pub input_file: String,
 }
